@@ -3,21 +3,16 @@ import SwiftUI
 struct UserListView: View {
     @Environment(UserStore.self) var userStore
     
-    var users: [User] {
-        userStore.values.values.sorted(by: { $0.id.rawValue < $1.id.rawValue })
-    }
-    
-    func load() async {
-        do {
-            try await userStore.loadAllValues()
-        } catch {
-            // Error handling
-            print(error)
-        }
-    }
-
     var body: some View {
-        List(users) { user in
+        UserListStateView(state: UserListViewState(userStore: userStore))
+    }
+}
+
+struct UserListStateView: View {
+    let state: UserListViewState
+    
+    var body: some View {
+        List(state.users) { user in
             NavigationLink {
                 UserView(id: user.id)
             } label: {
@@ -26,7 +21,7 @@ struct UserListView: View {
         }
         .listStyle(.plain)
         .task {
-            await load()
+            await state.load()
         }
     }
 }

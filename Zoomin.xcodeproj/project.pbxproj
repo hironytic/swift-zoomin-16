@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2300B10A2AE52D4C00C60750 /* UserViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300B1092AE52D4C00C60750 /* UserViewState.swift */; };
+		2300B10C2AE52E2C00C60750 /* UserListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300B10B2AE52E2C00C60750 /* UserListViewState.swift */; };
 		D654CBD12AE3CC9700BC7BFD /* ZoominApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D654CBD02AE3CC9700BC7BFD /* ZoominApp.swift */; };
 		D654CBD32AE3CC9700BC7BFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D654CBD22AE3CC9700BC7BFD /* ContentView.swift */; };
 		D654CBD52AE3CC9800BC7BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D654CBD42AE3CC9800BC7BFD /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2300B1092AE52D4C00C60750 /* UserViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewState.swift; sourceTree = "<group>"; };
+		2300B10B2AE52E2C00C60750 /* UserListViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewState.swift; sourceTree = "<group>"; };
 		D654CBCD2AE3CC9700BC7BFD /* Zoomin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D654CBD02AE3CC9700BC7BFD /* ZoominApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoominApp.swift; sourceTree = "<group>"; };
 		D654CBD22AE3CC9700BC7BFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,7 +117,9 @@
 				D6FFB7832AE3F72D008F992F /* User.swift */,
 				D6FFB7882AE3F7DA008F992F /* UserRepository.swift */,
 				D6FFB78A2AE3F90C008F992F /* UserView.swift */,
+				2300B1092AE52D4C00C60750 /* UserViewState.swift */,
 				D6FFB78E2AE3FF1F008F992F /* UserListView.swift */,
+				2300B10B2AE52E2C00C60750 /* UserListViewState.swift */,
 				D6FFB7922AE400AF008F992F /* UserStore.swift */,
 			);
 			path = Zoomin;
@@ -281,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FFB78F2AE3FF1F008F992F /* UserListView.swift in Sources */,
+				2300B10A2AE52D4C00C60750 /* UserViewState.swift in Sources */,
+				2300B10C2AE52E2C00C60750 /* UserListViewState.swift in Sources */,
 				D654CBD32AE3CC9700BC7BFD /* ContentView.swift in Sources */,
 				D654CBD12AE3CC9700BC7BFD /* ZoominApp.swift in Sources */,
 				D6FFB78B2AE3F90C008F992F /* UserView.swift in Sources */,
